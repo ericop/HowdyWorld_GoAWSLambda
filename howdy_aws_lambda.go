@@ -19,7 +19,7 @@ type Response struct {
 func Handler(request Request) (Response, error) {
 	learningPhrase := "start"
 	if request.IsLearning {
-		learingPhrase = "keep"
+		learningPhrase = "keep"
 	}
 	return Response{
 		Message: fmt.Sprintf("Howdy %v! And %v learning. ;)", request.Name, learningPhrase),
